@@ -3,5 +3,5 @@ project(codeforces)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(SOURCE_FILES equality_1038_A.cpp birthday_cake_629_A.cpp)
+set(SOURCE_FILES equality_1038_A.cpp birthday_cake_629_A.cpp pallindromic_supersequence_932_A.cpp)
 add_executable(cpp ${SOURCE_FILES})
