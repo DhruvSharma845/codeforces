@@ -24,11 +24,11 @@ int ProblemSolver::maxProblemsThatCanBeSolved(int numOfProblems, int timeToReach
 	return 0;
 } 
 
-int main(void) {
+/*int main(void) {
 	int numOfProblems, timeToParty;
 	cin>>numOfProblems>>timeToParty;
 
 	cout<<ProblemSolver::maxProblemsThatCanBeSolved(numOfProblems, timeToParty);
 	
 	return 0;
-}
+}*/

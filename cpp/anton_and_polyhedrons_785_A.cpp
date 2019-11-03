@@ -27,7 +27,7 @@ int Polyhedrons::getNumberOfFaces(string s) {
 	return 0;
 }
 
-int main(void) {
+/*int main(void) {
 	int N;
 	cin>>N;
 
@@ -40,4 +40,4 @@ int main(void) {
 	}
 	cout<<sum;
 	return 0;	
-}
+}*/

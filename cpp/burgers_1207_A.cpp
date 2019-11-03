@@ -64,7 +64,7 @@ int BurgerProfitCalculator::calculateProfit() {
 }
 
 
-int main(void) {
+/*int main(void) {
 	int queries;
 	cin>>queries;
 
@@ -78,4 +78,4 @@ int main(void) {
 		BurgerProfitCalculator* bpc = new BurgerProfitCalculator(buns, patties, cutlets, hamburger, chickenburger);
 		cout<<bpc->calculateProfit()<<endl;
 	}
-}
+}*/

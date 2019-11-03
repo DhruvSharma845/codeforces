@@ -18,7 +18,7 @@ string EvenOddGame::determineWinner(long int num) {
 	} 
 }
 
-int main(void) {
+/*int main(void) {
 	long int num;
 	cin>>num;
 
@@ -26,4 +26,4 @@ int main(void) {
 	cout<<g->determineWinner(num);
 	
 	return 0;
-}
+}*/

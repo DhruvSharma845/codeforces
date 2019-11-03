@@ -40,7 +40,7 @@ bool TriangleFinder::hasCycleOfLengthK(int k, int source, int start) {
 	return this->hasCycleOfLengthK(k - 1, this->neighbors[source], start);
 }
 
-int main(void) {
+/*int main(void) {
 
 	int numOfVertices;
 	cin>>numOfVertices;
@@ -58,4 +58,4 @@ int main(void) {
 		cout<<"NO";
 	}
 	return 0;
-}
+}*/

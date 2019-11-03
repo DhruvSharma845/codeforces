@@ -46,7 +46,7 @@ int SubsequenceFinder::findNumOfSubsequences() {
 	return totalVal;
 }
 
-int main(void) {
+/*int main(void) {
 	string s;
 	cin>>s;
 
@@ -55,4 +55,4 @@ int main(void) {
 	SubsequenceFinder* qf = new SubsequenceFinder(s, pattern);
 	cout<<qf->findNumOfSubsequences(); 	
 	return 0;
-}
+}*/

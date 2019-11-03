@@ -28,7 +28,7 @@ int QuantityOptimizer::findMinimumQuantityToMakeSum(long int sum) {
 	return quantity;
 }
 
-int main(void) {
+/*int main(void) {
 
 	int amounts[] = {1, 5, 10, 20, 100};
 
@@ -39,4 +39,4 @@ int main(void) {
 	cout<<qo->findMinimumQuantityToMakeSum(sum);
 	
 	return 0;
-}
+}*/

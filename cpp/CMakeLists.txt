@@ -1,7 +1,18 @@
 cmake_minimum_required(VERSION 3.15)
 project(codeforces)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDAmainRD 17)
 
-set(SOURCE_FILES equality_1038_A.cpp birthday_cake_629_A.cpp pallindromic_supersequence_932_A.cpp)
+set(SOURCE_FILES
+        equality_1038_A.cpp
+        birthday_cake_629_A.cpp
+        pallindromic_supersequence_932_A.cpp
+        anton_and_polyhedrons_785_A.cpp
+        burgers_1207_A.cpp
+        even_odd_game_959_A.cpp
+        hit_the_lottery_996_A.cpp
+        love_A_1146_A.cpp
+        love_triangle_939_A.cpp
+        new_year_and_hurry_750_A.cpp
+        qaq_894_A.cpp)
 add_executable(cpp ${SOURCE_FILES})
