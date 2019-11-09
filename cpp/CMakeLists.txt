@@ -15,5 +15,6 @@ set(SOURCE_FILES
         love_triangle_939_A.cpp
         new_year_and_hurry_750_A.cpp
         qaq_894_A.cpp
-        kefa_and_first_steps_580_A.cpp)
+        kefa_and_first_steps_580_A.cpp
+        hotelier_1200_A.cpp)
 add_executable(cpp ${SOURCE_FILES})

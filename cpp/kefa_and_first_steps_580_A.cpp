@@ -34,7 +34,7 @@ int LongestIncreasingSubSegment::findLengthOfLongestIncreasingSubSegment() {
     return max(currentMax, count);
 }
 
-int main() {
+/*int main() {
     int N;
     cin>>N;
 
@@ -47,5 +47,5 @@ int main() {
     cout<<lis->findLengthOfLongestIncreasingSubSegment();
 
     return 0;
-}
+}*/
 
