@@ -16,5 +16,7 @@ set(SOURCE_FILES
         new_year_and_hurry_750_A.cpp
         qaq_894_A.cpp
         kefa_and_first_steps_580_A.cpp
-        hotelier_1200_A.cpp)
+        hotelier_1200_A.cpp
+        oath_of_night_watch_786_A.cpp
+        king_escape_1033_A.cpp)
 add_executable(cpp ${SOURCE_FILES})
