@@ -36,7 +36,7 @@ bool KingEscape::canKingReachTarget() {
     return true;
 }
 
-int main() {
+/*int main() {
 
     int dimension;
     cin>>dimension;
@@ -61,5 +61,5 @@ int main() {
     }
 
     return 0;
-}
+}*/
 

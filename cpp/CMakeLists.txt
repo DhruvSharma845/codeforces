@@ -18,5 +18,5 @@ set(SOURCE_FILES
         kefa_and_first_steps_580_A.cpp
         hotelier_1200_A.cpp
         oath_of_night_watch_786_A.cpp
-        king_escape_1033_A.cpp)
+        king_escape_1033_A.cpp single_push_1253_A.cpp)
 add_executable(cpp ${SOURCE_FILES})
