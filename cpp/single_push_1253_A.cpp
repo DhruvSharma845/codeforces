@@ -34,7 +34,7 @@ bool canTwoArraysBeMadeEqual(int N, int* source, int* target) {
     return true;
 }
 
-int main() {
+/*int main() {
     int T;
     cin>>T;
     for (int i = 0; i < T; ++i) {
@@ -61,4 +61,4 @@ int main() {
 
     }
     return 0;
-}
+}*/
