@@ -20,5 +20,8 @@ set(SOURCE_FILES
         oath_of_night_watch_786_A.cpp
         king_escape_1033_A.cpp
         single_push_1253_A.cpp
-        bad_prices_1213_B.cpp)
+        bad_prices_1213_B.cpp
+        transformation_727_A.cpp
+        kuriyama_stones_433_B.cpp
+        social_network_1234_B2.cpp)
 add_executable(cpp ${SOURCE_FILES})
