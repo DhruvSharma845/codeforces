@@ -40,7 +40,7 @@ deque<int>* MessageWindow::findMessageWindowAfterMessages(int windowSize, int nu
 }
 
 
-int main() {
+/*int main() {
     int numOfMessages, messagesVisible;
     cin>>numOfMessages>>messagesVisible;
 
@@ -53,4 +53,4 @@ int main() {
         cout<<(*it)<<" ";
     }
     return 0;
-}
+}*/
