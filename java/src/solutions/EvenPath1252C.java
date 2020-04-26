@@ -27,18 +27,13 @@ public class EvenPath1252C {
 			ca--;
 			rb--;
 			cb--;
+
 			if(!reachable.containsKey(ra + "|" + ca)) {
-				reachable.put(ra + "|" + ca, new HashSet<>());
+				isReachable(R, C, ra, ca, rb, cb, reachable);
 			}
-			isReachable(R, C, ra, ca, rb, cb, reachable);
-			if(reachable.containsKey(ra + "|" + ca)) {
-				Set<String> dest = reachable.get(ra + "|" + ca);
-				if(dest.contains(rb + "|" + cb)) {
-					System.out.println("YES");	
-				}
-				else {
-					System.out.println("NO");
-				}
+			Set<String> dest = reachable.get(ra + "|" + ca);
+			if(dest.contains(rb + "|" + cb)) {
+				System.out.println("YES");	
 			}
 			else {
 				System.out.println("NO");
@@ -59,10 +54,8 @@ public class EvenPath1252C {
 		int srcV = R[ra] + C[ca];
 		int destV = R[rb] + C[cb];
 
-		Set<String> reachVer = reachable.get(ra + "|" + ca);
-		if(reachVer.contains(rb + "|" + cb)) {
-			return;
-		}
+		Set<String> reachVer = new HashSet<>();
+		reachable.put(ra + "|" + ca, reachVer);
 
 		Queue<Pair> queue = new LinkedList<>();
 		
@@ -89,23 +82,17 @@ public class EvenPath1252C {
 					Pair nextP = new Pair();
 					nextP.a = nextR;
 					nextP.b = nextC;
-					queue.add(nextP);
 
 					reachVer.add(nextR + "|" + nextC);
 					visited[nextR][nextC] = true;
 
-					if(!reachable.containsKey(nextR + "|" + nextC)) {
-						reachable.put(nextR + "|" + nextC, new HashSet<>());
-					}
-					Set<String> rV = reachable.get(nextR + "|" + nextC);
-					rV.add(ra + "|" + ca);
-					if(rV.contains(rb + "|" + cb)) {
+					if(reachable.containsKey(nextR + "|" + nextC)) {
+						Set<String> rV = reachable.get(nextR + "|" + nextC);
 						reachVer.addAll(rV);
-						return;
 					}
-				}
-				if(nextR == rb && nextC == cb) {
-					return;
+					else {
+						queue.add(nextP);
+					}
 				}
 			}
 		}

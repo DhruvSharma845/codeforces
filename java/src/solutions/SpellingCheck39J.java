@@ -28,10 +28,13 @@ public class SpellingCheck39J {
 		if(right - left < 0) {
 			System.out.println("" + (left-right));
 			right++;
+			StringBuilder sb = new StringBuilder();
 			while(right <= left) {
-				System.out.print((right+1) + " ");
+				sb.append((right+1) + " ");
+				//System.out.print((right+1) + " ");
 				right++;
 			}
+			System.out.println(sb.toString());
 		}
 		else {
 			System.out.println("0");
