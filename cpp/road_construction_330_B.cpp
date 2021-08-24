@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <unordered_set>
-#include <utility>
 
 auto main() -> int {
     int N, M;
