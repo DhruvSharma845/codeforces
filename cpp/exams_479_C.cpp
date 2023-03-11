@@ -4,7 +4,7 @@
 #include <algorithm>
 
 auto findMinimumDays(std::vector<std::pair<int, int>>& days) -> int {
-    std::sort(days.begin(), days.end(), [](const std::pair<int,int>& a, const std::pair<int, int>& b) {
+    std::sort(days.begin(), days.end(), [](const std::pair<int, int>& a, const std::pair<int, int>& b) {
         if(a.first != b.first) {
             return a.first < b.first;
         }
@@ -12,23 +12,26 @@ auto findMinimumDays(std::vector<std::pair<int, int>>& days) -> int {
             return a.second < b.second;
         }
     });
-    auto minVal = 0;
-    for(auto& pr: days) {
-        if(minVal > pr.second) {
-            minVal = pr.first;
+
+    int currentMinLimit = 0;
+    for(int i = 0; i < days.size(); ++i) {
+        if(days[i].second >= currentMinLimit) {
+            currentMinLimit = days[i].second;
         }
         else {
-            minVal = pr.second;
+            currentMinLimit = days[i].first;
         }
     }
-    return minVal;
+    return currentMinLimit;
 }
+
 
 auto main() -> int {
     auto exams = 0;
     std::cin >> exams;
 
     auto days = std::vector<std::pair<int, int>>();
+    days.reserve(exams);
     for (auto i = 0; i < exams; ++i) {
         auto originalDay = 0;
         auto earlyDay = 0;
@@ -38,10 +41,3 @@ auto main() -> int {
     
     std::cout << findMinimumDays(days) << std::endl;
 }
-
-/*
-4 1
-5 3
-6 2
-1000000000
-*/
